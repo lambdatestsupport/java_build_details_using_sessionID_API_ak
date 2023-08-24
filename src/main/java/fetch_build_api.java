@@ -84,8 +84,8 @@ public class fetch_build_api {
 
         //******Calling Build API using build ID to fetch the build status*****//
         String apiUrl1 = "https://api.lambdatest.com/automation/api/v1/builds/"+buildId;
-        String authorization1 = "Basic YWJpZEtpZHdha2MyYQ==";
-
+        String authorization1 = "Basic <BASE_AUTH>";
+        
         Request request1 = new Request.Builder()
                 .url(apiUrl1)
                 .header("accept", "application/json")
